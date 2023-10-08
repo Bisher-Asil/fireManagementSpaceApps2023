@@ -25,11 +25,6 @@ class ReportController extends GetxController{
 
     void updateMarkers(){
       bisherMarkers.clear();
-      bisherMarkers.add(Marker(
-        point: LatLng(37.08089575554106, 35.35752840453171),
-        width: 80,
-        height: 80,
-        builder: (context) => Image.asset(ImagePaths.shelterIcon)));
 
       if(reportedFire.value){
         bisherMarkers.add( Marker(
@@ -60,20 +55,15 @@ class ReportController extends GetxController{
         builder: (context) => Image.asset(ImagePaths.enviromentalHazedIcon)));
         }
         if(reportedVolunteer.value){
-          Marker(
-        point: LatLng(37.07853877879312, 35.36404575191596),
+          bisherMarkers.add(Marker(
+        point: LatLng(37.07777462292195, 35.36388756008736),
         width: 80,
         height: 80,
-        builder: (context) => Image.asset(ImagePaths.volunteerIcon));
+        builder: (context) => Image.asset(ImagePaths.volunteerIcon)));
         }
     }
 
-    var bisherMarkers = <Marker>[    
-      Marker(
-        point: LatLng(37.08089575554106, 35.35752840453171),
-        width: 80,
-        height: 80,
-        builder: (context) => Image.asset(ImagePaths.shelterIcon)),     
+    var bisherMarkers = <Marker>[         
     ].obs;
 
 

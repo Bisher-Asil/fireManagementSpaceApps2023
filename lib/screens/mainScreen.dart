@@ -205,9 +205,9 @@ class _MainScreenState extends State<MainScreen> {
                         markers: windDirections,
                       ),
                       //Bisher Fake Markers
-                      // MarkerLayerOptions(
-                      //   markers: reportController.bisherMarkers.value,
-                      // ),
+                       MarkerLayerOptions(
+                         markers: reportController.bisherMarkers.value,
+                       ),
                       OverlayImageLayerOptions(overlayImages: [
                       OverlayImage(bounds: LatLngBounds(LatLng(37.084003, 35.361670), LatLng(37.081041, 35.357764)),
                         imageProvider: Image.asset(ImagePaths.shelterIcon).image)
