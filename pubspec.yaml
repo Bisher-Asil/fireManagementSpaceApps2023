@@ -32,6 +32,7 @@ dev_dependencies:
     sdk: flutter
   json_serializable: ^6.6.1
   flutter_launcher_icons: 
+  flutter_native_splash: 
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -78,3 +79,10 @@ flutter:
 flutter_icons:
   android: true
   image_path: "assets/images/appIcon.jpg"
+  
+flutter_native_splash:
+    image: assets/images/appIcon.jpg  # path to your splash image
+    color: "FFCC8D"  # background color of the splash screen
+    android: true
+    image_mode: scale  # other options: "contain", "cover", "center"
+    scale: 1.5 
